@@ -25,7 +25,7 @@ export const createPrediction = async (req, res) => {
     console.log(data);
 
     
-    res.status(200).json({ message: "data" });
+    res.status(200).json({ message: data });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: error.message });
